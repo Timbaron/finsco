@@ -6,25 +6,27 @@ import { Welcome, Transactions, Footer } from "../components";
 
 const Home = () => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white, padding: SIZES.xSmall }}>
-      <Stack.Screen
-        options={{
-          headerStyle: {
-            backgroundColor: COLORS.lightWhite,
-          },
-          headerShadowVisible: false,
-          headerLeft: () => (
-            <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
-          ),
-          headerRight: () => (
-            <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
-          ),
-          headerTitle: "",
-        }}
-      />
-      <Welcome />
-      <Transactions />
-      <Text>Home</Text>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
+      <View style={{ padding: SIZES.xSmall }}>
+        <Stack.Screen
+          options={{
+            headerStyle: {
+              backgroundColor: COLORS.lightWhite,
+            },
+            headerShadowVisible: false,
+            headerLeft: () => (
+              <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+            ),
+            headerRight: () => (
+              <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
+            ),
+            headerTitle: "",
+          }}
+        />
+        <Welcome />
+        <Transactions />
+        <Text>Home</Text>
+      </View>
       <Footer />
     </SafeAreaView>
   );
