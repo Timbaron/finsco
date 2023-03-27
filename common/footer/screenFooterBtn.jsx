@@ -20,7 +20,7 @@ export default ScreenFooterBtn
 const styles = StyleSheet.create({
   btnContainer: {
     width: 60,
-    height: 60,
+    height: 50,
     backgroundColor: COLORS.white,
     borderRadius: SIZES.small / 1.25,
     justifyContent: "center",

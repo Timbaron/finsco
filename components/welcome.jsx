@@ -10,7 +10,7 @@ const Welcome = () => {
   const router = useRouter();
   return (
     <View style={styles.container}>
-      <View style={{ padding: 10 }}>
+      <View>
         <Text style={styles.balancaText}>Balance</Text>
         {isBalanceLoading ? (
           <Loader text="Loading Balance" />
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 200,
     backgroundColor: "#fff",
-    padding: 10,
+    // padding: 10,
     paddingTop: 30,
     display: "flex",
     flexDirection: "column",
