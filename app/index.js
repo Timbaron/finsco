@@ -6,7 +6,7 @@ import { Welcome, Transactions, Footer } from "../components";
 
 const Home = () => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white, padding: SIZES.xSmall }}>
       <Stack.Screen
         options={{
           headerStyle: {
