@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
   indivItem: (backgroundColor) => ({
     backgroundColor: backgroundColor,
     width: 130,
+    height: '100%',
     borderBottomEndRadius: 20,
     borderTopLeftRadius: 20,
     alignItems: "center",

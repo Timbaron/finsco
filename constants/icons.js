@@ -15,6 +15,8 @@ import wallet from '../assets/icons/wallet.png'
 import QrCode from '../assets/icons/qr-code.png'
 import PhoneCall from '../assets/icons/phone-call.png'
 import television from '../assets/icons/television.png'
+import send from '../assets/icons/send.png'
+import recieve from '../assets/icons/inbox.png'
 
 export default {
   heart,
@@ -33,5 +35,7 @@ export default {
   wallet,
   QrCode,
   PhoneCall,
-  television
+  television,
+  send,
+  recieve
 };

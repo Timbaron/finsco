@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const QRcode = () => {
+const RecieveMoney = () => {
   return (
     <View>
-      <Text>QRcode</Text>
+      <Text>RecieveMoney</Text>
     </View>
   )
 }
 
-export default QRcode
+export default RecieveMoney
 
 const styles = StyleSheet.create({})
