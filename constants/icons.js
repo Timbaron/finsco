@@ -13,6 +13,8 @@ import transfer from '../assets/icons/transfer.png'
 import analysis from '../assets/icons/analysis.png'
 import wallet from '../assets/icons/wallet.png'
 import QrCode from '../assets/icons/qr-code.png'
+import PhoneCall from '../assets/icons/phone-call.png'
+import television from '../assets/icons/television.png'
 
 export default {
   heart,
@@ -29,5 +31,7 @@ export default {
   transfer,
   analysis,
   wallet,
-  QrCode
+  QrCode,
+  PhoneCall,
+  television
 };

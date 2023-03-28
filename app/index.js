@@ -2,7 +2,7 @@ import { View, Text, SafeAreaView } from "react-native";
 import { Stack, useRouter } from "expo-router";
 import { COLORS, icons, images, SIZES, transactions} from "../constants";
 import ScreenHeaderBtn from "../common/header/screenHeaderBtn";
-import { Welcome, Transactions, Footer } from "../components";
+import { Welcome, Transactions, Footer, Hyperlinks } from "../components";
 
 const Home = () => {
   const router = useRouter();
@@ -25,7 +25,8 @@ const Home = () => {
           }}
         />
         <Welcome />
-        <Transactions transactions={transactions}  />
+        {/* <Transactions transactions={transactions}  /> */}
+        <Hyperlinks />
       </View>
       <Footer />
     </SafeAreaView>

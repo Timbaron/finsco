@@ -2,5 +2,6 @@ import Welcome from './welcome';
 import ActionBtn from './ActionBtn'
 import Transactions from './transactions'
 import Footer from './footer';
+import Hyperlinks from './hyperlinks';
 
-export {Welcome,ActionBtn, Transactions, Footer}
+export {Welcome,ActionBtn, Transactions, Footer, Hyperlinks}
