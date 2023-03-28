@@ -2,8 +2,10 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import { COLORS, SIZES, icons } from "../constants";
 import Hypers from "./hypers";
+import { useRouter } from "expo-router";
 
 const Hyperlinks = () => {
+  const router = useRouter()
   return (
     <View style={styles.hyperlinkContainer}>
       <View style={styles.container}>
@@ -25,7 +27,7 @@ const Hyperlinks = () => {
           color="#f7bae9"
           iconUrl={icons.transfer}
           title="Send Money"
-          handlePress={() => console.log("Send money Press")}
+          handlePress={() => router.push('/send/money')}
         />
         <Hypers
           color="#eb8a8a"

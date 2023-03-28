@@ -2,13 +2,15 @@ import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import ScreenFooterBtn from '../common/footer/screenFooterBtn'
 import { COLORS, icons } from '../constants'
+import { useRouter } from 'expo-router'
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <View style={styles.container}>
       <ScreenFooterBtn iconUrl={icons.home} handlePress={() => console.log('Home')}/>
       <ScreenFooterBtn iconUrl={icons.wallet} handlePress={() => console.log('Wallet')}/>
-      <ScreenFooterBtn iconUrl={icons.transfer} handlePress={() => console.log('Transfer')}/>
+      <ScreenFooterBtn iconUrl={icons.transfer} handlePress={() => router.push('/send/money')}/>
       <ScreenFooterBtn iconUrl={icons.analysis} handlePress={() => console.log('Analysis')}/>
     </View>
   )
