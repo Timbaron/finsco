@@ -12,6 +12,7 @@ import home from '../assets/icons/home.png'
 import transfer from '../assets/icons/transfer.png'
 import analysis from '../assets/icons/analysis.png'
 import wallet from '../assets/icons/wallet.png'
+import QrCode from '../assets/icons/qr-code.png'
 
 export default {
   heart,
@@ -27,5 +28,6 @@ export default {
   home,
   transfer,
   analysis,
-  wallet
+  wallet,
+  QrCode
 };

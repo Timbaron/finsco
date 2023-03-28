@@ -5,6 +5,7 @@ import ScreenHeaderBtn from "../common/header/screenHeaderBtn";
 import { Welcome, Transactions, Footer } from "../components";
 
 const Home = () => {
+  const router = useRouter();
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
       <View style={{ padding: SIZES.medium }}>
@@ -15,10 +16,10 @@ const Home = () => {
             },
             headerShadowVisible: false,
             headerLeft: () => (
-              <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+              <ScreenHeaderBtn iconUrl={icons.QrCode} dimension="60%" handlePress={() => router.push('payment/qr-code') } />
             ),
             headerRight: () => (
-              <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
+              <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" handlePress={() => console.log('Profile')} />
             ),
             headerTitle: "",
           }}

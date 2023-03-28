@@ -10,7 +10,7 @@ const Welcome = () => {
   const router = useRouter();
   return (
     <View style={styles.container}>
-      <View>
+      <View style={{alignItems: 'center'}}>
         <Text style={styles.balancaText}>Balance</Text>
         {isBalanceLoading ? (
           <Loader text="Loading Balance" />
@@ -48,11 +48,12 @@ const styles = StyleSheet.create({
     paddingTop: 30,
     display: "flex",
     flexDirection: "column",
-    gap: 15,
+    gap: 35,
+    alignItems: "center",
   },
   balancaText: {
     color: "grey",
-    fontSize: SIZES.medium,
+    fontSize: SIZES.large,
   },
   balance: {
     color: COLORS.gray2,
