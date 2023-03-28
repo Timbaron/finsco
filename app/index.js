@@ -12,7 +12,7 @@ const Home = () => {
         <Stack.Screen
           options={{
             headerStyle: {
-              backgroundColor: COLORS.lightWhite,
+              backgroundColor: COLORS.secondary,
             },
             headerShadowVisible: false,
             headerLeft: () => (
